@@ -1,0 +1,130 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Foodie App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <div class="p-4">
+   <!-- Top Bar -->
+   <div class="flex justify-between items-center mb-4">
+    <div class="flex items-center">
+     <img alt="User profile picture" class="rounded-full w-10 h-10" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-ip1IMOI4WmPorVWI315Ibdrs.png?st=2024-10-01T04%3A36%3A46Z&amp;se=2024-10-01T06%3A36%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T02%3A25%3A27Z&amp;ske=2024-10-02T02%3A25%3A27Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=c05DX57jaoRCZzdjF97Mh9IaOb6mAhOadJpb7kKWQiI%3D" width="40"/>
+     <span class="ml-2">
+      Hai, Foodie!
+     </span>
+    </div>
+    <i class="fas fa-bell text-xl">
+    </i>
+   </div>
+   <!-- Search Bar -->
+   <div class="mb-4">
+    <input class="w-full p-2 rounded-lg bg-gray-800 text-white" placeholder="Search" type="text"/>
+   </div>
+   <!-- Main Banner -->
+   <div class="relative mb-4">
+    <img alt="Food banner" class="w-full rounded-lg" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-P54A4pAJ0zjp2bXlX6UmCCLr.png?st=2024-10-01T04%3A36%3A46Z&amp;se=2024-10-01T06%3A36%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T09%3A52%3A48Z&amp;ske=2024-10-01T09%3A52%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Sknt4S8GCcQtOCeMkGhMEeN5TyO7tFglVQFT4pzNxEo%3D" width="600"/>
+    <div class="absolute top-0 left-0 p-4">
+     <h2 class="text-xl font-semibold">
+      Hari ini,
+     </h2>
+     <h2 class="text-xl font-semibold">
+      Mau makan apa?
+     </h2>
+     <button class="mt-2 px-4 py-2 bg-orange-500 text-white rounded-full">
+      Cari Makanan
+     </button>
+    </div>
+   </div>
+   <!-- Your Order Section -->
+   <div class="mb-4">
+    <div class="flex justify-between items-center mb-2">
+     <h3 class="text-lg font-semibold">
+      Pesanan anda
+     </h3>
+     <a class="text-sm text-gray-400" href="#">
+      Selengkapnya
+     </a>
+    </div>
+    <div class="flex items-center bg-gray-800 p-4 rounded-lg">
+     <img alt="Steak Nusantara" class="w-16 h-16 rounded-lg" height="60" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-HJfXT9l2BIw1bJ81UIBsAHmr.png?st=2024-10-01T04%3A36%3A46Z&amp;se=2024-10-01T06%3A36%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T00%3A56%3A39Z&amp;ske=2024-10-02T00%3A56%3A39Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=5z4ql4tSponZYsHwA8lvusYcm2IutmCV2KgNMX3%2BZdc%3D" width="60"/>
+     <div class="ml-4">
+      <h4 class="font-semibold">
+       Steak Nusantara
+      </h4>
+      <p class="text-sm text-gray-400">
+       Jalan Pandjaitan no 299
+      </p>
+      <p class="text-sm text-gray-400">
+       12 menit lagi
+      </p>
+     </div>
+     <i class="fas fa-ellipsis-h text-xl ml-auto">
+     </i>
+    </div>
+   </div>
+   <!-- Nearby Section -->
+   <div>
+    <div class="flex justify-between items-center mb-2">
+     <h3 class="text-lg font-semibold">
+      Dekat dengan anda
+     </h3>
+     <a class="text-sm text-gray-400" href="#">
+      Selengkapnya
+     </a>
+    </div>
+    <div class="flex space-x-4">
+     <div class="bg-gray-800 p-4 rounded-lg w-1/3">
+      <img alt="Patty Paradise" class="w-full h-24 rounded-lg mb-2" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-JQagNhVDvWVHjXYRJJ14ipxV.png?st=2024-10-01T04%3A36%3A42Z&amp;se=2024-10-01T06%3A36%3A42Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T14%3A35%3A22Z&amp;ske=2024-10-01T14%3A35%3A22Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=XhFWm4QtWw%2BqYVvIs390RH4T3n%2BHhDvV3TqFqJKEqbU%3D" width="100"/>
+      <h4 class="font-semibold">
+       Patty Paradise
+      </h4>
+      <p class="text-sm text-gray-400">
+       1.1 km dari sini
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg w-1/3">
+      <img alt="Pusako Minang" class="w-full h-24 rounded-lg mb-2" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-Qx33LnCL6Rvzp5KO056Vnv8U.png?st=2024-10-01T04%3A36%3A45Z&amp;se=2024-10-01T06%3A36%3A45Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T15%3A38%3A27Z&amp;ske=2024-10-01T15%3A38%3A27Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=WPtyU6mw6zRfQzlCvfKzGvje0%2BYbx23kCHMgxfk%2BF5c%3D" width="100"/>
+      <h4 class="font-semibold">
+       Pusako Minang
+      </h4>
+      <p class="text-sm text-gray-400">
+       0.9 km dari sini
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg w-1/3">
+      <img alt="Warteg Bahari" class="w-full h-24 rounded-lg mb-2" height="100" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-qsOUhGvmuqc1ADs1cDnKTJEy.png?st=2024-10-01T04%3A36%3A46Z&amp;se=2024-10-01T06%3A36%3A46Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-30T15%3A24%3A32Z&amp;ske=2024-10-01T15%3A24%3A32Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=mmQlk5qJmy%2Bu%2BqS5gYezPrGZJWZ0gbboy0MzFmcG9ho%3D" width="100"/>
+      <h4 class="font-semibold">
+       Warteg Bahari
+      </h4>
+      <p class="text-sm text-gray-400">
+       1.4 km dari sini
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Bottom Navigation -->
+  <div class="fixed bottom-0 left-0 right-0 bg-orange-500 p-4 flex justify-around">
+   <i class="fas fa-home text-white text-2xl">
+   </i>
+   <i class="fas fa-calendar-alt text-white text-2xl">
+   </i>
+   <i class="fas fa-comments text-white text-2xl">
+   </i>
+   <i class="fas fa-user text-white text-2xl">
+   </i>
+  </div>
+ </body>
+</html>
